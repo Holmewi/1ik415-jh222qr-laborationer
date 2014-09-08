@@ -16,5 +16,34 @@
                 <li><a href="kontakt.html">Kontakta mig</a></li>
             </ul>
         </div>
+        
+        <p>Observera! Detta är bara ett påhittat kontaktformulär!</p>
+        
+        <form id="input" action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="post">
+            <fieldset>
+                <legend>Ställ en fråga</legend>
+                
+                <p>Ärketyp:
+                <select>
+                    <option value="utbildning">Fråga om utbildning</option>
+                    <option value="kurs">Fråga om kurs</option>
+                    <option value="hyra">Fråga om anställning</option>
+                    <option value="webbplatsen">Fråga om webbplatsen</option>
+                    <option value="privat">Ställ en privat fråga</option>
+                </select>
+               </p>
+                <p>Rubrik:<input type="text" id="header"/>
+                
+                <p>Fråga:<textarea id="question" rows="4" cols="39"></textarea></p>
+            </fieldset>
+            <fieldset>
+                <legend>Information om dig</legend>
+                <input type="checkbox" id="e-post"/>Kontakta mig via e-post<br>
+                <input type="checkbox" id="telefon"/>Kontaka mig via telefon<br>
+            </fieldset>
+            <input type="Submit" value="Skicka förfrågan">
+        </form>
+     
+        
     </body>
 </html>
