@@ -3,164 +3,183 @@
     <head>
         <meta charset="utf-8">
         <title>Laborationer - Webbteknisk introduktion, 1IK415</title>
+        <link rel="stylesheet" media="all" href="../css/style.css" />
     </head>
     <body>
-        <h1>Laborationer</h1>
-        <p>Laborationsportal för utvecklare av digitala tjänster</p>
+        <container>
+            <header>
+                <img src="../pics/logo.png" alt="min logotyp" class="logotyp">
+                <p>Joakim Holmevi, jh222qr</p>
+                <p>Blogg om utveckling av digitala tjänster</p>
+            </header>
         
-        <div>
-            <ul>
-                <li><a href="../index.html">Hem</a></li>
-                <li><a href="presentation.html">Om mig</a></li>
-                <li><a href="laborationer.html">Mina laborationer</a></li>
-                <li><a href="kontakt.html">Kontakta mig</a></li>
-            </ul>
-        </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Hem</a></li>
+                    <li><a href="presentation.html">Om mig</a></li>
+                    <li><a href="laborationer.html">Mina laborationer</a></li>
+                    <li><a href="kontakt.html">Kontakta mig</a></li>
+                </ul>
+            </nav>
 
-        <h2>Webbteknisk introduktion, 1IK415</h2>
-            <ul>
-                <li><a href="#lab1">Laboration 1</a></li>
-                <li><a href="#lab2">Laboration 2</a></li>
-            </ul>
-            
-        <h2>Resultat</h2>
-        <a id="tabell"></a>
-            <table border='1'>
-                <thead>
-                    <tr>
-                        <th>Laborationer</th>
-                        <th>Uppgift</th>
-                        <th>Status</th>
-                        <th>Redovisat</th>
-                    </tr>
-                </thead>
-                <tfoot>
-                    <tr>
-                        <th colspan="4">
-                            Laborationsreslutatet gällande Joakim Holmevi
-                        </th>
-                    </tr>    
-                </tfoot>
-                <tbody>
-<!-- Laboration 1 -->
-                    <tr>
-                        <th rowspan="9">1</th>
-                        <td>1</td>
-                        <td>Färdig</td>
-                        <th>-</th>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Färdig</td>
-                        <th>-</th>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Färdig</td>
-                        <th>-</th>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Färdig</td>
-                        <th>-</th>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Färdig</td>
-                        <th>-</th>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>Färdig</td>
-                        <th>-</th>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td>Färdig</td>
-                        <th>-</th>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td>Färdig</td>
-                        <th>-</th>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td>Färdig</td>
-                        <th>-</th>
-                    </tr>
-<!-- Laboration 2 -->
-                    <tr>
-                        <th rowspan="6">2</th>
-                        <td>1</td>
-                        <td>-</td>
-                        <th>-</th>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>-</td>
-                        <th>-</th>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>-</td>
-                        <th>-</th>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>-</td>
-                        <th>-</th>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>-</td>
-                        <th>-</th>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>-</td>
-                        <th>-</th>
-                    </tr>
-                </tbody>
-            </table>
-            
-    <hr>
-        <a id="lab1"></a><h3>Laboration 1</h3>
-        <p>Uppgifter</p>
-            <ol>
-                <li>Utvecklingsmiljön - Kommit i gång med Git, Github och Cloud9</li>
-                <li><a href="kontakt.html">Ett första dokument är skapat</a></li>
-                <li>Absoluta och relativa sökvägar
-                    <dl>
-                        <dt>1.4.1 Skriv den absoluta sökvägen till filen bottom.html</dt>
-                        <dd>http://www.server.se/html/pages/bottom.html</dd>
-                        <dt>1.4.2 Skriv den relativa sökvägen från filen default.html till filen top.html</dt>
-                        <dd>pages/top.html</dd>
-                        <dt>1.4.3 Skriv den relativa sökvägen från filen bottom.html till filen index.html</dt>
-                        <dd>.. /../index.html</dd>
-                        <dt>1.4.4 Skriv den absoluta sökvägen till filen index.html</dt>
-                        <dd>http://www.server.se</dd>
-                        <dt>1.4.5 Skriv den relativa sökvägen från filen top.html till filen bottom.html</dt>
-                        <dd>bottom.html</dd>
-                        <dt>1.4.6 Skriv den relativa sökvägen från filen index.html till filen top.html</dt>
-                        <dd>html/pages/top.html</dd>
-                    </dl>
-                </li>
-                <li>Länkar och listor - Dessa finns just nu lite överallt på webbplatsen</li>
-                <li>Bilder
+            <content>
+                <h1>Laborationer</h1>
+                <p>Laborationsportal för utvecklare av digitala tjänster</p>
+                <h2>Webbteknisk introduktion, 1IK415</h2>
                     <ul>
-                        <li><a href="presentation.html#jpeg">Kolla på en bild i jpeg</a></li>
-                        <li><a href="../pics/logo.png">Länk till min logotyp i png</a></li>
-                        <li><a href="../index.html#lab1-5">Länk till bild i svg</a></li>
+                        <li><a href="#lab1">Laboration 1</a></li>
+                        <li><a href="#lab2">Laboration 2</a></li>
                     </ul>
-                </li>
-                <li>Video - <a href="../index.html#lab1-6">Se filmen på bloggen!</a></li>
-                <li>Tabeller - <a href="#tabell">Klicka för att komma till tabellen</a></li>
-                <li>Formulär <a href="kontakt.html#kontaktform">Klicka för att komma till formuläret</a></li>
-            </ol>
-    
-    <hr>
-        <a id="lab2"></a><h3>Laboration 2</h3>
-            <p>Uppgifter</p>
+                    
+                <h2>Resultat</h2>
+                <a id="tabell"></a>
+                    <table border='1'>
+                        <thead>
+                            <tr>
+                                <th>Laborationer</th>
+                                <th>Uppgift</th>
+                                <th>Status</th>
+                                <th>Redovisat</th>
+                            </tr>
+                        </thead>
+                        <tfoot>
+                            <tr>
+                                <th colspan="4">
+                                    Laborationsreslutatet gällande Joakim Holmevi
+                                </th>
+                            </tr>    
+                        </tfoot>
+                        <tbody>
+        <!-- Laboration 1 -->
+                            <tr>
+                                <th rowspan="9">1</th>
+                                <td>1</td>
+                                <td>Färdig</td>
+                                <th>-</th>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Färdig</td>
+                                <th>-</th>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Färdig</td>
+                                <th>-</th>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Färdig</td>
+                                <th>-</th>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Färdig</td>
+                                <th>-</th>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Färdig</td>
+                                <th>-</th>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Färdig</td>
+                                <th>-</th>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Färdig</td>
+                                <th>-</th>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>Färdig</td>
+                                <th>-</th>
+                            </tr>
+        <!-- Laboration 2 -->
+                            <tr>
+                                <th rowspan="6">2</th>
+                                <td>1</td>
+                                <td>-</td>
+                                <th>-</th>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>-</td>
+                                <th>-</th>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>-</td>
+                                <th>-</th>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>-</td>
+                                <th>-</th>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>-</td>
+                                <th>-</th>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>-</td>
+                                <th>-</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                <hr>
+                <a id="lab1"></a><h3>Laboration 1</h3>
+                <p>Uppgifter</p>
+                    <ol>
+                        <li>Utvecklingsmiljön - Kommit i gång med Git, Github och Cloud9</li>
+                        <li><a href="kontakt.html">Ett första dokument är skapat</a></li>
+                        <li>Absoluta och relativa sökvägar
+                            <dl>
+                                <dt>1.4.1 Skriv den absoluta sökvägen till filen bottom.html</dt>
+                                <dd>http://www.server.se/html/pages/bottom.html</dd>
+                                <dt>1.4.2 Skriv den relativa sökvägen från filen default.html till filen top.html</dt>
+                                <dd>pages/top.html</dd>
+                                <dt>1.4.3 Skriv den relativa sökvägen från filen bottom.html till filen index.html</dt>
+                                <dd>.. /../index.html</dd>
+                                <dt>1.4.4 Skriv den absoluta sökvägen till filen index.html</dt>
+                                <dd>http://www.server.se</dd>
+                                <dt>1.4.5 Skriv den relativa sökvägen från filen top.html till filen bottom.html</dt>
+                                <dd>bottom.html</dd>
+                                <dt>1.4.6 Skriv den relativa sökvägen från filen index.html till filen top.html</dt>
+                                <dd>html/pages/top.html</dd>
+                            </dl>
+                        </li>
+                        <li>Länkar och listor - Dessa finns just nu lite överallt på webbplatsen</li>
+                        <li>Bilder
+                            <ul>
+                                <li><a href="presentation.html#jpeg">Kolla på en bild i jpeg</a></li>
+                                <li><a href="../pics/logo.png">Länk till min logotyp i png</a></li>
+                                <li><a href="../index.html#lab1-5">Länk till bild i svg</a></li>
+                            </ul>
+                        </li>
+                        <li>Video - <a href="../index.html#lab1-6">Se filmen på bloggen!</a></li>
+                        <li>Tabeller - <a href="#tabell">Klicka för att komma till tabellen</a></li>
+                        <li>Formulär <a href="kontakt.html#kontaktform">Klicka för att komma till formuläret</a></li>
+                    </ol>
+            
+                <hr>
+                <a id="lab2"></a><h3>Laboration 2</h3>
+                    <p>Uppgifter</p>
+            </content>
+            
+            <footer>
+                <ul>
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="pages/presentation.html">Om mig</a></li>
+                    <li><a href="pages/laborationer.html">Mina laborationer</a></li>
+                    <li><a href="pages/kontakt.html">Kontakta mig</a></li>
+                </ul>                
+            </footer>
+        </container>
     </body>
 </html>
