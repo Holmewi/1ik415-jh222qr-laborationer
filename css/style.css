@@ -48,27 +48,45 @@ table {
 	border-spacing: 0;
 }
 
+html {
+	overflow-y:scroll;
+	/* Fixar marginalen på sidor som inte har scroll */
+}
+
 container {
+	margin: auto;
     max-width: 1000px;
     height: auto;
+    background-color: #FFF;
 }
 
 header {
-    max-width: 1000px;
+    width: 960px;
+    padding: 20px 20px 20px 20px;
+	/* total width 1000 */
+	background-color: #574;
 }
 
 nav {
-    max-width: 250px;
+    width: 230px;
+    padding: 20px 0px 20px 20px;
+    /* total width 250 */
     float: left;
+    background-color: #357;
 }
 
 content {
-    min-width: 750px;
+    width: 710px;
     float: right;
+    padding: 20px 20px 0px 20px;
+    /* total width 750 */    
 }
 
 footer {
-    max-width: 1000px;
+    max-width: 9600px;
+    padding: 20px 20px 20px 20px;
+    /* total width 1000 */
+    background-color: #943;
     clear: both;
 }
 
