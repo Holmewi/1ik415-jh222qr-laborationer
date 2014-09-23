@@ -6,14 +6,17 @@
         <link rel="stylesheet" media="all" href="../css/style.css" />
     </head>
     <body>
-        <container>
+        <div id="wrapper"> <!-- fick felmeddelande när jag använde taggen container -->
             <header>
-                <img src="../pics/logo.png" alt="min logotyp" class="logotyp">
-                <p>Joakim Holmevi, jh222qr</p>
-                <p>Blogg om utveckling av digitala tjänster</p>              
+                <div id="headerTop">
+                        
+                </div>
+                <div id="headerBottom">
+                    <img src="../pics/logo.png" alt="min logotyp" class="logotyp">
+                </div>
             </header>
 
-            <nav>
+            <nav class="borderRadius">
                 <ul>
                     <li><a href="../index.html">Hem</a></li>
                     <li><a href="presentation.html">Om mig</a></li>
@@ -22,9 +25,11 @@
                 </ul>
             </nav>
                 
-            <content>
-                <h1>Kontakta mig</h1>
-                <p>Här listas min kontaktinformation</p>
+            <div id="content" class="borderRadius">
+                <div id="contentTop">
+                    <h1>Kontakta mig</h1>
+                    <h4>Här listas min kontaktinformation</h4>
+                </div>
                 <p>Observera! Detta är bara ett påhittat kontaktformulär!</p>
                 
                 <a id="kontaktform"></a>
@@ -53,15 +58,17 @@
                     </fieldset>
                     <input type="Submit" value="Skicka förfrågan">
                 </form>
-             </content>
+             </div>
              <footer>
-                <ul>
-                    <li><a href="index.html">Hem</a></li>
-                    <li><a href="pages/presentation.html">Om mig</a></li>
-                    <li><a href="pages/laborationer.html">Mina laborationer</a></li>
-                    <li><a href="pages/kontakt.html">Kontakta mig</a></li>
-                </ul>                 
-             </footer>
-        </container>
+                <div id="footerNav">
+                    <ul>
+                        <li><a href="index.html">Hem</a></li>
+                        <li><a href="pages/presentation.html">Om mig</a></li>
+                        <li><a href="pages/laborationer.html">Mina laborationer</a></li>
+                        <li><a href="pages/kontakt.html">Kontakta mig</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
     </body>
 </html>

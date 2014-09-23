@@ -1,10 +1,28 @@
+@charset "UTF-8";
+/* CSS Document */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
 
+/*
+	Main #97235A (Pink)
+		Light main #D06C9B #AF4074
+		Dark main #7B0E42 #58002A
+	Secondary #1F5873 (Blue)
+		Light aside #56869D #346B85
+		Dark aside #0F445D #032D42
+	Filler #B59D2A (Mustard)
+		Light header #F9E482 #D2BB4C
+		Dark header #947D11 #695700
+	Text links #7B0E42
+	Dark text #1D1D1D
+	Light text #FAFAFA
+	Footer #2A2A2A
+*/
+
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+/* h1, h2, h3, h4, h5, h6, */ p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -32,9 +50,10 @@ footer, header, hgroup, menu, nav, section, container {
 body {
 	line-height: 1;
 }
-ol, ul {
+ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
@@ -53,47 +72,98 @@ html {
 	/* Fixar marginalen på sidor som inte har scroll */
 }
 
-container {
-	margin: auto;
+#wrapper {
+	margin-left: auto;
+	margin-right: auto;
     max-width: 1000px;
-    height: auto;
-    background-color: #FFF;
+    height: 100%;
 }
 
 header {
-    width: 960px;
-    padding: 20px 20px 20px 20px;
-	/* total width 1000 */
-	background-color: #574;
+    width: 1000px;
+    /*padding: 20px 20px 20px 20px;
+	 total width 1000
+	background-image:url(pics/header_bg.png);
+	background-color: #D06C9B; 
+	border-style: solid;
+    border-color: #97235A;
+    border-width: 10px 0px 0px 0px;*/
+}
+
+#headerTop {
+    width: 1000px;
+    min-height: 10px;
+	background-color: #97235A;
+}
+
+#headerBottom {
+    width: 1000px;
+    min-height: 95px;
+	background-image:url(pics/header_bg.png);
+	background-color: #D06C9B;
+}
+
+#divTextlogo {
+    margin: 30px 0px 0px 30px;
+    float: left;
+	font-weight:100;
+	font-size:30px;
+    color: #FAFAFA;
 }
 
 nav {
-    width: 230px;
-    padding: 20px 0px 20px 20px;
+    width: 250px;
+    min-height: 300px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin: 30px 0px 25px 0px;
     /* total width 250 */
     float: left;
-    background-color: #357;
+    background-color: #FFF;
 }
 
-content {
-    width: 710px;
+#content {
+    width: 730px;
     float: right;
-    padding: 20px 20px 0px 20px;
-    /* total width 750 */    
+    padding-bottom: 20px;
+    margin: 30px 0px 30px 0px;
+    /* total width 730 */
+    background-color: #FFF;
+}
+
+#contentTop {
+    height: auto;
+    padding-top: 15px;
+    margin: 0px 40px 0px 40px;
 }
 
 footer {
-    max-width: 9600px;
-    padding: 20px 20px 20px 20px;
+    max-width: 1000px;
+    height: 173px;
     /* total width 1000 */
-    background-color: #943;
+    /* total height 253 */
+    background-color: #2A2A2A;
+    border-style: solid;
+    border-color: #97235A;
+    border-width: 10px 0px 0px 0px;
     clear: both;
 }
+
+#footerNav {
+    padding-top: 30px;
+    width: 345px;
+    margin: auto;
+}
+
+
+
+/* HEADERS, LISTS AND TEXT */
 
 h1 {
     font-size: 32px;
     font-family: "Mundo Sans W01 Medium",Helvetica,sans-serif;
 	font-weight: 400;
+	color: #AF4074;
 }
 
 h2 {
@@ -105,13 +175,133 @@ h3 {
     font-size: 18px;
 }
 
-dt {
-   	font-size: 18px;
+h4 {
+    font-size: 18px;
+    font-family: "Mundo Sans W01 Medium",Helvetica,sans-serif;
 }
 
-/* IMAGES */
+
+/* IMAGES AND VIDEOS */
+
+.bloggVideo {
+    max-width: 600px;
+    padding: 7px 0px 0px 20px;
+}
 
 .logotyp {
-    max-height: 150px;
+    max-height: 80px;
+    padding: 7px 0px 0px 20px;
+}
+
+.profilbild {
+    padding: 0px 20px 10px 0px;
+    float: left;
+    max-width: 140px;
+}
+
+/* FIXED CLASSES */
+
+.borderRadius {
+	-webkit-border-radius: 6px 6px 6px 6px;
+	-moz-border-radius: 6px 6px 6px 6px;
+	border-radius: 6px 6px 6px 6px;
+}
+
+.blogg {
+    height: auto;
+	padding: 0px 0px 40px 0px;
+	margin: 40px;
+    border-style: solid;
+    border-color: #ACACAC;
+    border-width: 0px 0px 1px 0px;
+}
+
+.blogg p {
+	padding-bottom: 20px;
+}
+
+.bloggContent {
+	padding-bottom: 20px;
+}
+
+.bloggInfo {
+    padding-top: 10px;
+    border-style: dotted;
+    border-color: #D9D9D9;
+    border-width: 1px 0px 0px 0px;
+}
+
+.bloggInfo p, .bloggInfo a {
+	font-size: 12px;
+    font-family: "Mundo Sans W01 Medium",Helvetica,sans-serif;
+    display: inline;
+}
+
+.blogg table {
+    width: 600px;
+}
+
+.blogg table, .blogg tr, .blogg th, .blogg td {
     padding: 5px;
+	border: solid 1px;
+	border-color: #455;
+}
+
+.labList dd, .labList ol {
+	margin-left: 35px;
+}
+
+.labList li, .labList dt, .labList dd, .labList p {
+    font-family: "Mundo Sans W01 Medium",Helvetica,sans-serif;
+	font-size: 16px;
+}
+
+.labList a, .labList dt, .labList dd, .labList ul {
+    font-family: "Mundo Sans W01 Medium",Helvetica,sans-serif;
+	font-size: 14px;
+}
+
+.labList dt, .labList dd, .labList li, .labList dt, .labList dd, .labList p {
+	padding-bottom: 5px;
+}
+
+.ingress {
+	font-weight: 800;
+	padding-bottom: 20px;
+}
+
+.floatleft {
+	float: left;
+}
+
+.floatright {
+	float: right;
+}
+
+/* LINKS */
+
+a:link { color:#AF4074; text-decoration:none; }
+a:visited { color:#AF4074; text-decoration:none; }
+a:hover { color:#56869D; text-decoration:underline; }
+a:active { color:#56869D; text-decoration:underline; }
+
+nav a:link { color:#97235A;  }
+nav a:visited { color:#97235A;  }
+nav a:hover { color:#56869D;  }
+nav a:active { color:#56869D;  }
+
+nav li { 
+	font-size: 20px;
+	margin: 0px 20px 15px 30px;
+}
+
+footer a:link { color:#FFF;  }
+footer a:visited { color:#FFF;  }
+footer a:hover { color:#FFF;  }
+footer a:active { color:#FFF;  }
+
+footer li { 
+	font-size: 18px;
+	margin-right: 20px;
+	display:inline;
 }
