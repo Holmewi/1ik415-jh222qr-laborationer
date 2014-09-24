@@ -38,8 +38,8 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	
-	font-family: "Open Sans", Helvetica, sans-serif;
+	font-style: inherit;
+    font-family: "Mundo Sans W01 Medium",Helvetica,sans-serif;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -133,7 +133,7 @@ footer {
 
 #footerNav {
     padding-top: 30px;
-    width: 345px;
+    width: 440px;
     margin: auto;
 }
 
@@ -154,10 +154,6 @@ h2 {
 }
 
 h3, {
-    font-size: 18px;
-}
-
-.listHead dt {
     font-size: 18px;
 }
 
