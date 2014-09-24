@@ -129,6 +129,7 @@ footer {
     border-color: #97235A;
     border-width: 10px 0px 0px 0px;
     clear: both;
+    background-image:url(pics/footer_bg.png);
 }
 
 #footerNav {
