@@ -28,7 +28,7 @@ del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
+fieldset,/* form, label, legend,*/
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
@@ -38,7 +38,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	
 	font-family: "Open Sans", Helvetica, sans-serif;
 	vertical-align: baseline;
 }
@@ -81,13 +81,6 @@ html {
 
 header {
     width: 1000px;
-    /*padding: 20px 20px 20px 20px;
-	 total width 1000
-	background-image:url(pics/header_bg.png);
-	background-color: #D06C9B; 
-	border-style: solid;
-    border-color: #97235A;
-    border-width: 10px 0px 0px 0px;*/
 }
 
 #headerTop {
@@ -109,17 +102,6 @@ header {
 	font-weight:100;
 	font-size:30px;
     color: #FAFAFA;
-}
-
-nav {
-    width: 250px;
-    min-height: 300px;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    margin: 30px 0px 25px 0px;
-    /* total width 250 */
-    float: left;
-    background-color: #FFF;
 }
 
 #content {
@@ -171,7 +153,11 @@ h2 {
     font-family: "Mundo Sans W01 Medium",Helvetica,sans-serif;
 }
 
-h3 {
+h3, {
+    font-size: 18px;
+}
+
+.listHead dt {
     font-size: 18px;
 }
 
@@ -180,6 +166,9 @@ h4 {
     font-family: "Mundo Sans W01 Medium",Helvetica,sans-serif;
 }
 
+span {
+    font-family: "Mundo Sans W01 Medium",Helvetica,sans-serif;
+}
 
 /* IMAGES AND VIDEOS */
 
@@ -202,9 +191,9 @@ h4 {
 /* FIXED CLASSES */
 
 .borderRadius {
-	-webkit-border-radius: 6px 6px 6px 6px;
-	-moz-border-radius: 6px 6px 6px 6px;
-	border-radius: 6px 6px 6px 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
 }
 
 .blogg {
@@ -280,19 +269,21 @@ h4 {
 
 /* LINKS */
 
-a:link { color:#AF4074; text-decoration:none; }
-a:visited { color:#AF4074; text-decoration:none; }
-a:hover { color:#56869D; text-decoration:underline; }
-a:active { color:#56869D; text-decoration:underline; }
-
-nav a:link { color:#97235A;  }
-nav a:visited { color:#97235A;  }
-nav a:hover { color:#56869D;  }
-nav a:active { color:#56869D;  }
-
-nav li { 
-	font-size: 20px;
-	margin: 0px 20px 15px 30px;
+a:link {     
+    color:#AF4074; 
+    text-decoration:none; 
+}
+a:visited { 
+    color:#AF4074; 
+    text-decoration:none;
+}
+a:hover { 
+    color:#56869D; 
+    text-decoration:underline;
+}
+a:active { 
+    color:#56869D; 
+    text-decoration:underline; 
 }
 
 footer a:link { color:#FFF;  }
@@ -304,4 +295,99 @@ footer li {
 	font-size: 18px;
 	margin-right: 20px;
 	display:inline;
+}
+
+
+/* HEADMENU */
+
+nav {
+    width: 250px;
+    min-height: 300px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin: 30px 0px 25px 0px;
+    float: left;
+    background-color: #FFF;
+}
+
+#headMenu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 18px;
+}
+
+#headMenu ul li a {
+    display: block;
+    background: #d9d9d9;
+    width: 220px;
+    text-decoration: none;
+    padding: 15px 0px 15px 20px;
+    margin: 1px 0px 0px 0px;
+
+    border-left: 10px solid #97235A;
+    color: #333333;
+}
+
+#headMenu ul li a:hover {
+    border-left-color: #56869D;
+    color: #56869D;
+    background: #c4c4c4;
+}
+
+#headMenu ul li a:active {
+    border-left-color: #1F5873;
+    color: #1F5873;
+    background: #c4c4c4;
+}
+
+
+/* Fick ta till lite hjälp
+Källa: http://www.mstudiostalk.com/2008/03/11/pure-css-to-display-the-active-page-in-the-navigation/
+*/
+
+#home a.active,
+#presentation a.active,
+#laborations a.active,
+#contact a.active
+{
+    border-left-color: #1F5873;
+    color: #333333;
+    background: #c4c4c4;
+}
+
+
+/* FORM */
+
+.form {
+    width: 500px;
+    height: auto;
+	margin: 40px;
+}
+
+form    {
+    font-family: "Mundo Sans W01 Medium",Helvetica,sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #333333;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px dotted #999;
+}
+
+fieldset {
+    font-family: "Mundo Sans W01 Medium",Helvetica,sans-serif;
+    font-size: 14px;
+}
+
+legend {
+    font-family: "Mundo Sans W01 Medium",Helvetica,sans-serif;
+    font-size: 18px;
+}
+
+.formContent {
+    margin-left: 10px;
 }

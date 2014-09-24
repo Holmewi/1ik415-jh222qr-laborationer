@@ -5,7 +5,7 @@
         <title>Kontakta mig - Här listas min kontaktinformation</title>
         <link rel="stylesheet" media="all" href="../css/style.css" />
     </head>
-    <body>
+    <body id="contact">
         <div id="wrapper"> <!-- fick felmeddelande när jag använde taggen container -->
             <header>
                 <div id="headerTop">
@@ -17,12 +17,14 @@
             </header>
 
             <nav class="borderRadius">
-                <ul>
-                    <li><a href="../index.html">Hem</a></li>
-                    <li><a href="presentation.html">Om mig</a></li>
-                    <li><a href="laborationer.html">Mina laborationer</a></li>
-                    <li><a href="kontakt.html">Kontakta mig</a></li>
-                </ul>
+                <div id="headMenu">
+                    <ul>
+                        <li><a href="../index.html">Hem</a></li>
+                        <li><a href="presentation.html">Om mig</a></li>
+                        <li><a href="laborationer.html">Mina laborationer</a></li>
+                        <li><a href="kontakt.html" class="active">Kontakta mig</a></li>
+                    </ul>
+                </div>
             </nav>
                 
             <div id="content" class="borderRadius">
@@ -30,34 +32,44 @@
                     <h1>Kontakta mig</h1>
                     <h4>Här listas min kontaktinformation</h4>
                 </div>
-                <p>Observera! Detta är bara ett påhittat kontaktformulär!</p>
-                
-                <a id="kontaktform"></a>
-                <form id="input" action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="post">
-                    <fieldset>
-                        <legend>Ställ en fråga</legend>
-                        
-                        Ärketyp:
-                        <select>
-                            <option value="utbildning">Fråga om utbildning</option>
-                            <option value="kurs">Fråga om kurs</option>
-                            <option value="hyra">Fråga om anställning</option>
-                            <option value="webbplatsen">Fråga om webbplatsen</option>
-                            <option value="privat">Ställ en privat fråga</option>
-                        </select>
-                        <br>
-                        Rubrik:<input type="text" id="header"/>
-                        <br>
-                        Fråga:<textarea id="question" rows="4" cols="39"></textarea>
-                    </fieldset>
+                <div class="form">
+                    <p>Observera! Detta är bara ett påhittat kontaktformulär!</p>
                     
-                    <fieldset>
-                        <legend>Information om dig</legend>
-                        <input type="checkbox" id="e-post"/>Kontakta mig via e-post<br>
-                        <input type="checkbox" id="telefon"/>Kontaka mig via telefon<br>
-                    </fieldset>
-                    <input type="Submit" value="Skicka förfrågan">
-                </form>
+                    <a id="kontaktform"></a>
+                    <form id="input" action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="post">
+                        <fieldset>
+                            <legend><span class="formHeader">Ställ en fråga</span></legend>
+                                <span class="formContent">Ärketyp:
+                                    <select>
+                                        <option value="utbildning">Fråga om utbildning</option>
+                                        <option value="kurs">Fråga om kurs</option>
+                                        <option value="hyra">Fråga om anställning</option>
+                                        <option value="webbplatsen">Fråga om webbplatsen</option>
+                                        <option value="privat">Ställ en privat fråga</option>
+                                    </select>
+                                </span>
+                                <br>
+                                <span class="formContent">
+                                    Rubrik:<input type="text" id="header"/>
+                                </span>
+                                <br>
+                                <span class="formContent">
+                                    Fråga:<textarea id="question" rows="4" cols="39"></textarea>
+                                </span>
+                        </fieldset>
+                        
+                        <fieldset>
+                            <legend>Information om dig</legend>
+                            <span class="formContent">
+                                <input type="checkbox" id="e-post"/>Kontakta mig via e-post<br>
+                            </span>
+                            <span class="formContent">
+                                <input type="checkbox" id="telefon"/>Kontaka mig via telefon<br>
+                            </span>
+                        </fieldset>
+                        <input type="Submit" value="Skicka förfrågan">
+                    </form>
+                </div>
              </div>
              <footer>
                 <div id="footerNav">

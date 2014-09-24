@@ -5,7 +5,7 @@
         <link rel="stylesheet" media="all" href="css/style.css" />
         <title>Joakim Holmevi, jh222qr - Utvecklare av digitala tjänster</title>
     </head>
-    <body>
+    <body id="home">
         <div id="wrapper"> <!-- fick felmeddelande när jag använde taggen container -->
             <header>
                 <div id="headerTop">
@@ -17,12 +17,14 @@
             </header>
             
             <nav class="borderRadius">
-                <ul>
-                    <li><a href="index.html">Hem</a></li>
-                    <li><a href="pages/presentation.html">Om mig</a></li>
-                    <li><a href="pages/laborationer.html">Mina laborationer</a></li>
-                    <li><a href="pages/kontakt.html">Kontakta mig</a></li>
-                </ul>
+                <div id="headMenu">
+                    <ul>
+                        <li><a href="index.html" class="active">Hem</a></li>
+                        <li><a href="pages/presentation.html">Om mig</a></li>
+                        <li><a href="pages/laborationer.html">Mina laborationer</a></li>
+                        <li><a href="pages/kontakt.html">Kontakta mig</a></li>
+                    </ul>
+                </div>
             </nav>
             
             <div id="content" class="borderRadius">

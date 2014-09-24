@@ -11,7 +11,7 @@ DTD användes tidigare för att deklarare regler för att webbläsaren skulle ku
         <link rel="stylesheet" media="all" href="../css/style.css" />
         <title>Om mig - och mina små egenheter</title>
     </head>
-    <body>
+    <body id="presentation">
         <div id="wrapper"> <!-- fick felmeddelande när jag använde taggen container -->
             <header>
                 <div id="headerTop">
@@ -23,12 +23,14 @@ DTD användes tidigare för att deklarare regler för att webbläsaren skulle ku
             </header>
 
             <nav class="borderRadius">
-                <ul>
-                    <li><a href="../index.html">Hem</a></li>
-                    <li><a href="presentation.html">Om mig</a></li>
-                    <li><a href="laborationer.html">Mina laborationer</a></li>
-                    <li><a href="kontakt.html">Kontakta mig</a></li>
-                </ul>
+                <div id="headMenu">
+                    <ul>
+                        <li><a href="../index.html">Hem</a></li>
+                        <li><a href="presentation.html" class="active">Om mig</a></li>
+                        <li><a href="laborationer.html">Mina laborationer</a></li>
+                        <li><a href="kontakt.html">Kontakta mig</a></li>
+                    </ul>
+                </div>
             </nav>
             
             <div id="content" class="borderRadius">
@@ -67,7 +69,7 @@ DTD användes tidigare för att deklarare regler för att webbläsaren skulle ku
                    
                     <div class="labList">
                         <dl>
-                            <dt><h3>Arbetslivserfarenheter</h3></dt>
+                            <dt>Arbetslivserfarenheter</dt>
                             <dd>
                                 <dl>
                                     <dt>2009 - 2012, <a href="http://www.mtr.se/">MTR Stockholm Tunnelbana</a></dt> <!-- Uppgift 1.5 - externa länkar -->
@@ -78,7 +80,7 @@ DTD användes tidigare för att deklarare regler för att webbläsaren skulle ku
                                     <dd>Fotograf & Reproduktion</dd>
                                 </dl>
                             </dd>
-                            <dt><h3>Tidigare utbildningar</h3></dt>
+                            <dt>Tidigare utbildningar</dt>
                             <dd>
                                 <dl>
                                     <dt>2012 - 2014, <a href="http://lnu.se">Linnéuniversitetet</a></dt>
