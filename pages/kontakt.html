@@ -36,48 +36,57 @@
                     <p>Observera! Detta är bara ett påhittat kontaktformulär!</p>
                     
                     <a id="kontaktform"></a>
-                    <form id="input" action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="post">
-                        <fieldset>
-                            <legend><span class="formHeader">Ställ en fråga</span></legend>
-                                <span class="formContent">Ärketyp:
-                                    <select>
-                                        <option value="utbildning">Fråga om utbildning</option>
-                                        <option value="kurs">Fråga om kurs</option>
-                                        <option value="hyra">Fråga om anställning</option>
-                                        <option value="webbplatsen">Fråga om webbplatsen</option>
-                                        <option value="privat">Ställ en privat fråga</option>
-                                    </select>
-                                </span>
+                    <form id="input" action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="POST" name="ContactForm">
+                        <fieldset id="set_form">
+                            <legend>
+                                <label class="formHeader" name="FormHeader">Ställ en fråga</label>
+                            </legend>
+                            <p><label for="form_list">Ärendetyp:</label></p>
+                            <select id="form_list" name="FormList" >
+                                <option value="utbildning">Fråga om utbildning</option>
+                                <option value="kurs">Fråga om kurs</option>
+                                <option value="hyra">Fråga om anställning</option>
+                                <option value="webbplatsen">Fråga om webbplatsen</option>
+                                <option value="privat">Ställ en privat fråga</option>
+                            </select>
+                              
+                            <p>
+                                <label for="msg_header">Rubrik:</label>
+                            </p>
+                            <input type="text" id="msg_header" name="MessageHeader"/>
+                            
                             <br>
-                                <span class="formContent">
-                                    Rubrik:<input type="text" id="header"/>
-                                </span>
-                            <br>
-                                <span class="formContent">
-                                    Fråga:<textarea id="question" rows="4" cols="39"></textarea>
-                                </span>
+                            <p>
+                                <label for="user_message">Skriv din fråga här:</label>
+                            </p>
+                            <textarea id="user_message" name="UserMessage" rows="4" cols="39"></textarea>
+                                
                         </fieldset>
                         
-                        <fieldset>
-                            <legend>Information om dig</legend>
-                            <span class="formContent">
-                                <input type="checkbox" id="e-post"/>Kontakta mig via e-post<br>
-                            </span>
-                            <span class="formContent">
-                                <input type="checkbox" id="telefon"/>Kontaka mig via telefon<br>
-                            </span>
+                        <fieldset id="contact_info">
+                            <legend>
+                                <label class="formHeader" name="FormInfo">Information om dig</label>
+                            </legend>
+                            <p>
+                                <input type="checkbox" id="form_email" name="FormEmail" value="email">
+                                <label for="form_email">Kontakta mig via e-post</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="form_phone" name="FormPhone" value="phone">
+                                <label for="form_phone">Kontakta mig via telefon</label>
+                            </p>
                         </fieldset>
-                        <input type="Submit" value="Skicka förfrågan">
+                        <input type="submit" value="Skicka förfrågan" />
                     </form>
                 </div>
              </div>
              <footer>
                 <div id="footerNav">
                     <ul>
-                        <li><a href="index.html">Hem</a></li>
-                        <li><a href="pages/presentation.html">Om mig</a></li>
-                        <li><a href="pages/laborationer.html">Mina laborationer</a></li>
-                        <li><a href="pages/kontakt.html">Kontakta mig</a></li>
+                        <li><a href="../index.html">Hem</a></li>
+                        <li><a href="presentation.html">Om mig</a></li>
+                        <li><a href="laborationer.html">Mina laborationer</a></li>
+                        <li><a href="kontakt.html">Kontakta mig</a></li>
                     </ul>
                 </div>
             </footer>
