@@ -146,14 +146,12 @@ body {
     
     h1 {
         font-size: 32px;
-        font-family: "Mundo Sans W01 Medium",Helvetica,sans-serif;
     	font-weight: 400;
     	color: #AF4074;
     }
     
     h2 {
         font-size: 24px;
-        font-family: "Mundo Sans W01 Medium",Helvetica,sans-serif;
     }
     
     h3 {
@@ -162,7 +160,6 @@ body {
     
     h4 {
         font-size: 18px;
-        font-family: "Mundo Sans W01 Medium",Helvetica,sans-serif;
     }
     
     .bloggContent H2 {
@@ -171,6 +168,11 @@ body {
         background-image:url(pics/blogicon.png);
         background-repeat: no-repeat;
         background-size: 23px 23px;
+    }
+    
+.ingress {
+    	font-weight: 800;
+    	padding-bottom: 20px;
     }
     
 /* IMAGES AND VIDEOS */
@@ -230,7 +232,6 @@ body {
     
     .bloggInfo p, .bloggInfo a {
     	font-size: 12px;
-        font-family: "Mundo Sans W01 Medium",Helvetica,sans-serif;
         display: inline;
     }
     
@@ -249,22 +250,15 @@ body {
     }
     
     .labList li, .labList dt, .labList dd, .labList p {
-        font-family: "Mundo Sans W01 Medium",Helvetica,sans-serif;
     	font-size: 16px;
     }
     
     .labList a, .labList dt, .labList dd, .labList ul {
-        font-family: "Mundo Sans W01 Medium",Helvetica,sans-serif;
     	font-size: 14px;
     }
     
     .labList dt, .labList dd, .labList li, .labList dt, .labList dd, .labList p {
     	padding-bottom: 5px;
-    }
-    
-    .ingress {
-    	font-weight: 800;
-    	padding-bottom: 20px;
     }
     
     .floatleft {

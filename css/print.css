@@ -1,0 +1,58 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@page {
+    margin: 2cm 2cm 3cm 2cm;
+}
+
+/* För att skriva ut url efter länkarna vid utskrift
+Källa: http://css-tricks.com/snippets/css/print-url-after-links/ */
+
+@media print{
+       a:after{content:" (" attr(href) ") ";font-size:0.8em;font-weight:normal;}
+}
+
+body {
+	font-family: Georgia, Times, serif;
+	size: auto;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	font-family: Georgia, Times, serif;
+}
+
+header, nav, footer, form, .print_nolink {
+	display: none;
+}
+
+#wrapper {
+    size: auto;
+    margin: 0,5cm;
+}
+
+#content {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+    size: auto;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* HEADERS, LISTS AND TEXT */
+    
+.bloggContent H2 {
+    padding-left: 0px;
+}
