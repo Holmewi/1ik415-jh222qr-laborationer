@@ -326,9 +326,9 @@ body {
         text-decoration: none;
         padding: 15px 0px 15px 20px;
         margin: 1px 0px 0px 0px;
-    
         border-left: 10px solid #97235A;
         color: #333333;
+
     }
     
     #headMenu ul li a:hover {
@@ -343,20 +343,40 @@ body {
         background: #c4c4c4;
     }
     
-    
-    /* Fick ta till lite hjälp
-    Källa: http://www.mstudiostalk.com/2008/03/11/pure-css-to-display-the-active-page-in-the-navigation/
-    */
-    
-    #home a.active,
-    #presentation a.active,
-    #laborations a.active,
-    #contact a.active
-    {
+    #headMenu .active {
         border-left-color: #1F5873;
         color: #333333;
         background: #c4c4c4;
+    } 
+    
+    #headMenu a {
+        background-image:url(pics/sprite.png);
+    } 
+    
+    #headMenu #homepage {
+        background-image:url(pics/sprite.png);
+        background-repeat: no-repeat;
+        background-position: 200px 12px;
+    } 
+    
+    #headMenu #aboutpage {
+        background-image:url(pics/sprite.png);
+        background-repeat: no-repeat;
+        background-position: 200px -180px;
     }
+    
+    #headMenu #labpage {
+        background-image:url(pics/sprite.png);
+        background-repeat: no-repeat;
+        background-position: 200px -84px;
+    }
+    
+    #headMenu #contactpage {
+        background-image:url(pics/sprite.png);
+        background-repeat: no-repeat;
+        background-position: 200px -276px;
+    }
+    
     
     
 /* FORM */
