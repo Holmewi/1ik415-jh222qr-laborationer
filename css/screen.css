@@ -1,114 +1,32 @@
 @charset "UTF-8";
 /* CSS Document */
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
-/*
-	Main #97235A (Pink)
-		Light main #D06C9B #AF4074
-		Dark main #7B0E42 #58002A
-	Secondary #1F5873 (Blue)
-		Light aside #e3eaed #346B85
-		Dark aside #0F445D #032D42
-	Filler #B59D2A (Mustard)
-		Light header #F9E482 #D2BB4C
-		Dark header #947D11 #695700
-	Text links #7B0E42
-	Dark text #1D1D1D
-	Light text #FAFAFA
-	Footer #2A2A2A
-*/
-
-html, body, div, span, applet, object, iframe,
-/* h1, h2, h3, h4, h5, h6, */ p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-/*fieldset, form, label, legend,*/
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font-style: inherit;
-    font-family: "Mundo Sans W01 Medium",Helvetica,sans-serif;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section, container {
-	display: block;
-}
-body {
-    background-color:#d1d1d1;
-	line-height: 1;
-    }
-    
-    ul {
-    	list-style: none;
-    }
-    
-    blockquote, q {
-    	quotes: none;
-    }
-    blockquote:before, blockquote:after,
-    q:before, q:after {
-    	content: '';
-    	content: none;
-    }
-    table {
-    	border-collapse: collapse;
-    	border-spacing: 0;
-    }
-    
-    html {
-    	overflow-y:scroll;
-    	/* Fixar marginalen på sidor som inte har scroll */
-    }
-    
-    #wrapper {
+#wrapper {
     	margin-left: auto;
     	margin-right: auto;
-        max-width: 1000px;
+        max-width: 480px;
         height: 100%;
     }
     
     header {
-        width: 1000px;
+        width: 481px;
     }
     
     #headerTop {
-        width: 1000px;
-        min-height: 10px;
+        width: 480px;
+        min-height: 7px;
     	background-color: #97235A;
     }
     
     #headerBottom {
-        width: 1000px;
-        min-height: 95px;
+        width: 480px;
+        min-height: 65px;
     	background-image:url(pics/header_bg.png);
     	background-color: #D06C9B;
     }
     
-    #divTextlogo {
-        margin: 30px 0px 0px 30px;
-        float: left;
-    	font-weight:100;
-    	font-size:30px;
-        color: #FAFAFA;
-    }
-    
     #content {
-        width: 730px;
-        float: right;
+        width: 480px;
         padding-bottom: 20px;
         margin: 30px 0px 30px 0px;
         /* total width 730 */
@@ -122,7 +40,7 @@ body {
     }
     
     footer {
-        max-width: 1000px;
+        max-width: 480px;
         height: 173px;
         /* total width 1000 */
         /* total height 253 */
@@ -141,186 +59,13 @@ body {
     }
     
     
-    
-/* HEADERS, LISTS AND TEXT */
-    
-    h1 {
-        font-size: 32px;
-    	font-weight: 400;
-    	color: #AF4074;
-    }
-    
-    h2 {
-        font-size: 24px;
-    }
-    
-    h3 {
-        font-size: 18px;
-    }
-    
-    h4 {
-        font-size: 18px;
-    }
-    
-    .bloggContent H2 {
-        padding-left: 30px;
-        padding-bottom: 14px;
-        background-image:url(pics/blogicon.png);
-        background-repeat: no-repeat;
-        background-size: 23px 23px;
-    }
-    
-.ingress {
-    	font-weight: 800;
-    	padding-bottom: 20px;
-    }
-    
-/* IMAGES AND VIDEOS */
-    
-    .bloggVideo {
-        max-width: 600px;
-        padding: 7px 0px 0px 20px;
-    }
-    
-    .logotyp {
-        max-height: 80px;
-        padding: 7px 0px 0px 20px;
-    }
-    
-    .profilbild {
-        padding: 0px 20px 10px 0px;
-        float: left;
-        max-width: 140px;
-    }
-    
-    .bloggBild_right {
-        max-width: 300px;
-        padding: 0px 0px 20px 20px;
-    }
-    
-    .bloggBild_left {
-        max-width: 300px;
-        padding: 0px 20px 20px 0px;
-    }
-    
-    .bloggbild {
-
-    }
-    
-/* FIXED CLASSES */
-    
-    .borderRadius {
-    	-webkit-border-radius: 6px;
-    	-moz-border-radius: 6px;
-    	border-radius: 6px;
-    }
-    
-    .blogg {
-        height: 100%;
-    	padding: 0px 0px 40px 0px;
-    	margin: 40px;
-        border-style: solid;
-        border-color: #ACACAC;
-        border-width: 0px 0px 1px 0px;
-        clear: both;
-    }
-    
-    .blogg p {
-    	padding-bottom: 20px;
-    }
-    
-    .bloggContent {
-        height: auto;
-    	padding-bottom: 20px;
-    }
-    
-    .bloggInfo {
-        padding-top: 10px;
-        border-style: dotted;
-        border-color: #D9D9D9;
-        border-width: 1px 0px 0px 0px;
-        clear: both;
-    }
-    
-    .bloggInfo p, .bloggInfo a {
-    	font-size: 12px;
-        display: inline;
-    }
-    
-    .blogg table {
-        width: 600px;
-    }
-    
-    .blogg table, .blogg tr, .blogg th, .blogg td {
-        padding: 5px;
-    	border: solid 1px;
-    	border-color: #455;
-    }
-    
-    .labList dd, .labList ol {
-    	margin-left: 35px;
-    }
-    
-    .labList li, .labList dt, .labList dd, .labList p {
-    	font-size: 16px;
-    }
-    
-    .labList a, .labList dt, .labList dd, .labList ul {
-    	font-size: 14px;
-    }
-    
-    .labList dt, .labList dd, .labList li, .labList dt, .labList dd, .labList p {
-    	padding-bottom: 5px;
-    }
-    
-    .floatleft {
-    	float: left;
-    }
-    
-    .floatright {
-    	float: right;
-    }
-    
-/* LINKS */
-    
-    a:link {     
-        color:#AF4074; 
-        text-decoration:none; 
-    }
-    a:visited { 
-        color:#AF4074; 
-        text-decoration:none;
-    }
-    a:hover { 
-        color:#56869D; 
-        text-decoration:underline;
-    }
-    a:active { 
-        color:#56869D; 
-        text-decoration:underline; 
-    }
-    
-    footer a:link { color:#FFF;  }
-    footer a:visited { color:#FFF;  }
-    footer a:hover { color:#FFF;  }
-    footer a:active { color:#FFF;  }
-    
-    footer li { 
-    	font-size: 18px;
-    	margin-right: 20px;
-    	display:inline;
-    }
-    
-    
-/* HEADMENU */
+    /* HEADMENU */
     
     nav {
-        width: 250px;
-        min-height: 300px;
-        padding-top: 30px;
-        padding-bottom: 20px;
-        margin: 30px 0px 25px 0px;
-        float: left;
+        margin: 0px;
+        padding: 0px;
+        min-height: 237px;
+        width: 480px;
         background-color: #FFF;
     }
     
@@ -334,9 +79,9 @@ body {
     #headMenu ul li a {
         display: block;
         background: #d9d9d9;
-        width: 220px;
+        width: 450px;
         text-decoration: none;
-        padding: 15px 0px 15px 20px;
+        padding: 20px 0px 20px 20px;
         margin: 1px 0px 0px 0px;
         border-left: 10px solid #97235A;
         color: #333333;
@@ -389,16 +134,74 @@ body {
         background-position: 200px -276px;
     }
     
+    footer li { 
+    	font-size: 18px;
+    	margin-right: 40px;
+    	margin-left: 20px;
+    	margin-bottom: 14px;
+    	display:block;
+    }
     
+    /* IMAGES AND VIDEOS */
     
-/* FORM */
+    .bloggVideo {
+        max-width: 400px;
+        padding: 7px 0px 0px 0px;
+    }
+    
+    .logotyp {
+        max-height: 50px;
+        padding: 7px 0px 0px 20px;
+    }
+    
+    .profilbild {
+        padding: 0px 20px 10px 0px;
+        float: left;
+        max-width: 140px;
+    }
+    
+    .bloggBild_right {
+        max-width: 400px;
+        padding: 0px 0px 20px 0px;
+    }
+    
+    .bloggBild_left {
+        max-width: 400px;
+        padding: 0px 0px 20px 0px;
+    }
+    
+    .bloggbild {
+        max-width: 400px;
+    }
+    
+    /* FIXED CLASSES */
+    
+    .borderRadius {
+    	-webkit-border-radius: 0px;
+    	-moz-border-radius: 0px;
+    	border-radius: 0px;
+    }
+    
+    .floatleft {
+    	float: none;
+    }
+    
+    .floatright {
+    	float: none;
+    }
+    
+    .blogg table {
+        width: 420px;
+    }
+    
+    /* FORM */
 /* 
 Hittade lite nyttig hjälp på mozilla developer för att ändra utseendet på checkboxarna 
 Källa: https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/Advanced_styling_for_HTML_forms
 */
     
     .form {
-        width: 500px;
+        width: 420px;
         height: auto;
     	margin: 40px;
     }
@@ -512,7 +315,7 @@ input[type=text], textarea {
    padding: 7px;
    font-size: 15px;
    line-height: 17px;
-   width: 80%;
+   width: 90%;
    background-color: #e3eaed;
    -webkit-appearance: none;
    -webkit-box-shadow: 1px 1px 1px #fff;
