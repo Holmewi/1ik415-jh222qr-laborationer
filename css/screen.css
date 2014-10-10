@@ -6,39 +6,150 @@
     	margin-right: auto;
         max-width: 480px;
         height: 100%;
-    }
+}
     
+/* HEADER */
+
     header {
-        width: 481px;
+        width: 100%;
     }
     
-    #headerTop {
-        width: 480px;
-        min-height: 7px;
-    	background-color: #97235A;
+        #headerTop {
+            width: 100%;
+            min-height: 7px;
+        	background-color: #97235A;
+        }
+    
+        #headerBottom {
+            width: 100%;
+            min-height: 65px;
+        	background-image:url(pics/header_bg.png);
+        	background-color: #D06C9B;
+        }
+    
+/* HEADMENU */
+    
+    nav {
+        margin: 0px;
+        padding: 0px;
+        /*min-height: 237px;*/
+        width:100%;
+        float:none;
+        background-color: #FFF;
     }
     
-    #headerBottom {
-        width: 480px;
-        min-height: 65px;
-    	background-image:url(pics/header_bg.png);
-    	background-color: #D06C9B;
-    }
+        #headMenu ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            font-size: 18px;
+        }
+        
+        #headMenu ul li a {
+            display: block;
+            background: #d9d9d9;
+            /*width: 450px;*/
+            text-decoration: none;
+            padding: 20px 0px 20px 20px;
+            margin: 1px 0px 0px 0px;
+            border-left: 10px solid #97235A;
+            color: #333333;
     
+        }
+        
+            #headMenu ul li a:hover {
+                border-left-color: #56869D;
+                color: #56869D;
+                background: #c4c4c4;
+            }
+            
+            #headMenu ul li a:active {
+                border-left-color: #1F5873;
+                color: #1F5873;
+                background: #c4c4c4;
+            }
+            
+            #headMenu .active {
+                border-left-color: #1F5873;
+                color: #333333;
+                background: #c4c4c4;
+            } 
+            
+            #headMenu a {
+                background-image:url(pics/sprite.png);
+            } 
+            
+            #headMenu #homepage:hover {
+                background-image:url(pics/sprite.png);
+                background-repeat: no-repeat;
+                background-position: 200px 12px;
+            }
+        
+            #headMenu #homepage {
+                background-image:url(pics/sprite.png);
+                background-repeat: no-repeat;
+                background-position: 200px -36px;
+            } 
+        
+            #headMenu #aboutpage:hover {
+                background-image:url(pics/sprite.png);
+                background-repeat: no-repeat;
+                background-position: 200px -180px;
+            }
+            
+            #headMenu #aboutpage {
+                background-image:url(pics/sprite.png);
+                background-repeat: no-repeat;
+                background-position: 200px -228px;
+            }
+        
+            #headMenu #labpage:hover {
+                background-image:url(pics/sprite.png);
+                background-repeat: no-repeat;
+                background-position: 200px -84px;
+            }
+            
+            #headMenu #labpage {
+                background-image:url(pics/sprite.png);
+                background-repeat: no-repeat;
+                background-position: 200px -132px;
+            }
+            
+            #headMenu #contactpage:hover {
+                background-image:url(pics/sprite.png);
+                background-repeat: no-repeat;
+                background-position: 200px -276px;
+            }
+        
+            #headMenu #contactpage {
+                background-image:url(pics/sprite.png);
+                background-repeat: no-repeat;
+                background-position: 200px -324px;
+            }
+    
+/* CONTENT */
+
     #content {
-        width: 480px;
+        width: 100%;
         padding-bottom: 20px;
-        margin: 30px 0px 30px 0px;
+        margin: 0px 0px 30px 0px;
         /* total width 730 */
         background-color: #FFF;
     }
     
-    #contentTop {
-        height: auto;
-        padding-top: 15px;
-        margin: 0px 40px 0px 40px;
-    }
+        #contentTop {
+            height: auto;
+            padding-top: 15px;
+            margin: 0px 40px 0px 40px;
+        }
+        
+        .blogg table {
+            width: 100%;
+            overflow-x: scroll;
+        }
     
+/* FOOTER */
+
     footer {
         max-width: 480px;
         height: 173px;
@@ -52,100 +163,24 @@
         background-image:url(pics/footer_bg.png);
     }
     
-    #footerNav {
-        padding-top: 30px;
-        width: 440px;
-        margin: auto;
-    }
+        #footerNav {
+            padding-top: 30px;
+            width: 100%;
+            margin: auto;
+        }
     
+            footer li { 
+            	font-size: 18px;
+            	margin-right: 40px;
+            	margin-left: 20px;
+            	margin-bottom: 14px;
+            	display:block;
+            }
     
-    /* HEADMENU */
-    
-    nav {
-        margin: 0px;
-        padding: 0px;
-        min-height: 237px;
-        width: 480px;
-        background-color: #FFF;
-    }
-    
-    #headMenu ul {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-        font-size: 18px;
-    }
-    
-    #headMenu ul li a {
-        display: block;
-        background: #d9d9d9;
-        width: 450px;
-        text-decoration: none;
-        padding: 20px 0px 20px 20px;
-        margin: 1px 0px 0px 0px;
-        border-left: 10px solid #97235A;
-        color: #333333;
-
-    }
-    
-    #headMenu ul li a:hover {
-        border-left-color: #56869D;
-        color: #56869D;
-        background: #c4c4c4;
-    }
-    
-    #headMenu ul li a:active {
-        border-left-color: #1F5873;
-        color: #1F5873;
-        background: #c4c4c4;
-    }
-    
-    #headMenu .active {
-        border-left-color: #1F5873;
-        color: #333333;
-        background: #c4c4c4;
-    } 
-    
-    #headMenu a {
-        background-image:url(pics/sprite.png);
-    } 
-    
-    #headMenu #homepage {
-        background-image:url(pics/sprite.png);
-        background-repeat: no-repeat;
-        background-position: 200px 12px;
-    } 
-    
-    #headMenu #aboutpage {
-        background-image:url(pics/sprite.png);
-        background-repeat: no-repeat;
-        background-position: 200px -180px;
-    }
-    
-    #headMenu #labpage {
-        background-image:url(pics/sprite.png);
-        background-repeat: no-repeat;
-        background-position: 200px -84px;
-    }
-    
-    #headMenu #contactpage {
-        background-image:url(pics/sprite.png);
-        background-repeat: no-repeat;
-        background-position: 200px -276px;
-    }
-    
-    footer li { 
-    	font-size: 18px;
-    	margin-right: 40px;
-    	margin-left: 20px;
-    	margin-bottom: 14px;
-    	display:block;
-    }
-    
-    /* IMAGES AND VIDEOS */
+/* IMAGES AND VIDEOS */
     
     .bloggVideo {
-        max-width: 400px;
+        width: 100%;
         padding: 7px 0px 0px 0px;
     }
     
@@ -161,20 +196,23 @@
     }
     
     .bloggBild_right {
+        width: 100%;
         max-width: 400px;
         padding: 0px 0px 20px 0px;
     }
     
     .bloggBild_left {
+        width: 100%;
         max-width: 400px;
         padding: 0px 0px 20px 0px;
     }
     
     .bloggbild {
+        width: 100%;
         max-width: 400px;
     }
     
-    /* FIXED CLASSES */
+/* GENERAL CLASSES */
     
     .borderRadius {
     	-webkit-border-radius: 0px;
@@ -190,21 +228,15 @@
     	float: none;
     }
     
-    .blogg table {
-        width: 420px;
-    }
+
     
-    /* FORM */
+/* FORM */
 /* 
 Hittade lite nyttig hjälp på mozilla developer för att ändra utseendet på checkboxarna 
 Källa: https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/Advanced_styling_for_HTML_forms
 */
     
-    .form {
-        width: 420px;
-        height: auto;
-    	margin: 40px;
-    }
+
     
     form    {
         line-height: 24px;
@@ -218,121 +250,119 @@ Källa: https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/Advanced_s
         display: inline-block;
     }
     
-    fieldset {
-        border : 1px dotted #56869D;
-        border-radius: 5px;
-        margin : 0;
-        padding: 20px;
-    }
-    
-    #set_form p {
-        padding-top: 12px;
-    }
-    
-    #contact_info {
-        margin-top: 20px;
-        margin-bottom: 30px;
-    }
-    
-    legend {
-        font-size: 18px;
-    }
+        fieldset {
+            border : 1px dotted #56869D;
+            border-radius: 5px;
+            margin : 0;
+            padding: 20px;
+        }
+        
+            #set_form p {
+                padding-top: 12px;
+            }
+            
+            #contact_info {
+                margin-top: 20px;
+                margin-bottom: 30px;
+            }
+            
+            legend {
+                font-size: 18px;
+            }
 
-label {
-  cursor: pointer;
-}
-
-form p {
-  margin: 0;
-}
-
-form p+p {
-  margin: .5em 0 0;
-}
-    
-input[type=text], input[type=submit], textarea, select {
-    -webkit-appearance: none; /* Tar bort standardutseendet på elementen */
-     }
+            label {
+                cursor: pointer;
+            }
+            
+            form p {
+                margin: 0;
+            }
+            
+            form p+p {
+                margin: .5em 0 0;
+            }
+            
+            input[type=text], input[type=submit], textarea, select {
+                -webkit-appearance: none;     /* Tar bort standardutseendet på elementen */
+            }
    
    
-select {
-   border: 1px solid #1F5873;
-   padding: 7px;
-   font-size: 15px;
-   line-height: 17px;
-   width: 80%;
-   background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ccc));
-   -webkit-appearance: none;
-   -webkit-box-shadow: 1px 1px 1px #fff;
-   -webkit-border-radius: 0.5em;
- }
- 
-:root input[type=checkbox] {
-  /* original check box are push outside the viexport */
-  position: absolute;
-  left: -1000em;
-}
-
-:root input[type=checkbox] + label:before {
-  content: "";
-  display: inline-block;
-  width  : 19px;
-  height : 19px;
-  margin : 0 .5em 0 0;
-  background: url("pics/checkbox_sprite2.png") no-repeat 0 0;
-
-/* The following is used to adjust the position of 
-   the check boxes on the text baseline */
-
-  vertical-align: bottom;
-  position: relative;
-  bottom: 2px;
-}
-
-:root input[type=checkbox]:checked + label:before {
-  background-position: 0 -19px;
-}
-
-:root input[type=checkbox]:disabled + label:before {
-  background-position: 0 -38px;
-}
-
-:root input[type=checkbox]:checked:disabled + label:before {
-  background-position: 0 -57px;
-}
-  
-:root input[type=checkbox]:focus {
-  outline: 1px dotted black;
-}
- 
-select {
-   background: url("pics/form_list_bg.png") no-repeat right;
-   background-size: auto 32px;
- }
- 
-input[type=text], textarea {
-   border: 1px solid #1F5873;
-   padding: 7px;
-   font-size: 15px;
-   line-height: 17px;
-   width: 90%;
-   background-color: #e3eaed;
-   -webkit-appearance: none;
-   -webkit-box-shadow: 1px 1px 1px #fff;
-   -webkit-border-radius: 0.5em;
- }
- 
- 
- 
-input[type=submit] {
-   border: 1px solid #1F5873;
-   padding: 14px;
-   font-size: 18px;
-   line-height: 17px;
-   width: 50%;
-   color: #FAFAFA;
-   background: -webkit-gradient(linear, left top, left bottom, from(#56869D), to(#032D42));
-   -webkit-appearance: none;
-   -webkit-box-shadow: 1px 1px 1px #fff;
-   -webkit-border-radius: 0.5em;
- }
+            select {
+               border: 1px solid #1F5873;
+               padding: 6px;
+               font-size: 15px;
+               line-height: 17px;
+               width: 80%;
+               background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ccc));
+               -webkit-appearance: none;
+               -webkit-box-shadow: 1px 1px 1px #fff;
+               -webkit-border-radius: 0.5em;
+             }
+         
+            /* original check box are push outside the viexport */
+            :root input[type=checkbox] {
+              position: absolute;
+              left: -1000em;
+            }
+        
+            :root input[type=checkbox] + label:before {
+              content: "";
+              display: inline-block;
+              width  : 19px;
+              height : 19px;
+              margin : 0 .5em 0 0;
+              background: url("pics/checkbox_sprite2.png") no-repeat 0 0;
+            
+            /* The following is used to adjust the position of 
+               the check boxes on the text baseline */
+            
+              vertical-align: bottom;
+              position: relative;
+              bottom: 2px;
+            }
+        
+            :root input[type=checkbox]:checked + label:before {
+              background-position: 0 -19px;
+            }
+            
+            :root input[type=checkbox]:disabled + label:before {
+              background-position: 0 -38px;
+            }
+            
+            :root input[type=checkbox]:checked:disabled + label:before {
+              background-position: 0 -57px;
+            }
+              
+            :root input[type=checkbox]:focus {
+              outline: 1px dotted black;
+            }
+         
+            select {
+               background: url("pics/form_list_bg.png") no-repeat right;
+               background-size: auto 32px;
+             }
+         
+            input[type=text], textarea {
+               border: 1px solid #1F5873;
+               padding: 7px;
+               font-size: 15px;
+               line-height: 17px;
+               width: 90%;
+               background-color: #e3eaed;
+               -webkit-appearance: none;
+               -webkit-box-shadow: 1px 1px 1px #fff;
+               -webkit-border-radius: 0.5em;
+             }
+         
+            input[type=submit] {
+               border: 1px solid #1F5873;
+               padding: 14px;
+               font-size: 18px;
+               line-height: 17px;
+               width: 50%;
+               color: #FAFAFA;
+               background: -webkit-gradient(linear, left top, left bottom, from(#56869D), to(#032D42));
+               -webkit-appearance: none;
+               -webkit-box-shadow: 1px 1px 1px #fff;
+               -webkit-border-radius: 0.5em;
+             }
