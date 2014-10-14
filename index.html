@@ -12,7 +12,7 @@
         
         <title>Joakim Holmevi, jh222qr - Utvecklare av digitala tjänster</title>
     </head>
-    <body>
+    <body id="home">
         <div id="wrapper"> <!-- fick felmeddelande när jag använde taggen container -->
             <header>
                 <div id="headerTop">
@@ -35,14 +35,36 @@
             </nav>
             
             <div id="content" class="borderRadius">
+            
+                <aside id="sidefield">
+                    <h3>Senaste inlägg</h3>
+                    <a href="#lab3-3">Uppgift 3.3 - Copycat</a>
+                    <p>Skrivet: 2014-10-01</p>
+                    
+                    <a href="#lab2-7">Uppgift 2.7 - Ny bloggpost</a>
+                    <p>Skrivet: 2014-09-24</p>
+                    
+                    <a href="#lab1-6">Uppgift 1.6 - Video</a>
+                    <p>Skrivet: 2014-09-10</p>
+                    
+                    <a href="#lab1-5">Uppgift 1.5 - Bilder</a>
+                    <p>Skrivet: 2014-09-10</p>
+                    
+                    <a href="#lab1-4">Uppgift 1.4</a>
+                    <p>Skrivet: 2014-09-10</p>
+                    
+                    <a href="#lab1-1">Laboration 1</a>
+                    <p>Skrivet: 2014-09-10</p>
+                </aside>
+                
                 <div id="contentTop">
                     <h1>Joakim Holmevi, jh222qr</h1>
                     <h4>Blogg om utveckling av digitala tjänster</h4>       
                 </div>
                 
-                <div class="blogg">
+                <article class="blogg">
                     <div class="bloggContent">
-                        </a><a id="lab3-3" class="print_nolink"></a><h2>Uppgift 3.3 - Ny bloggpost</h2>
+                        <a id="lab3-3" class="print_nolink"></a><h2>Uppgift 3.3 - Copycat</h2>
                         
                         <a href="https://preview.c9.io/holmewi/uppgift-3-3/index.html" target="_blank"><img src="pics/IE7_hela.png" alt="en bild på en hemsida" class="floatleft bloggBild_left"></a>
                         <p class="ingress">Uppgift 3.3 Copycat är klar för visning. Klicka på bilden till vänster för att komma till sidan.</p>
@@ -52,9 +74,19 @@
                         <p class="floatleft">Skrivet av Joakim, 2014-09-24</p>
                         <p class="floatright">Updaterad senast 2014-09-24 | <a href="mailto:jh222qr@student.lnu.se">Kontakta sidansvarig</a></p> 
                     </div>
-                </div>
+                    
+                    <section>
+                        <a class="commentlink" href="?comments=1">Visa kommentarer</a>
+                        <h2>Kommentarer</h2>
+                        <article class="comment">
+                            <h4>Skrivet av: John Doe</h4>
+                            <p>2014-10-01 20:30</p>
+                            <p>Testar att skriva en kommentar!</p>
+                        </article>
+                    </section>
+                </article>
                 
-                <div class="blogg">
+                <article class="blogg">
                     <div class="bloggContent">
                         <a id="lab2-7" class="print_nolink"></a><h2>Uppgift 2.7 - Ny bloggpost</h2>
                         
@@ -67,9 +99,9 @@
                         <p class="floatleft">Skrivet av Joakim, 2014-09-24</p>
                         <p class="floatright">Updaterad senast 2014-09-24 | <a href="mailto:jh222qr@student.lnu.se">Kontakta sidansvarig</a></p> 
                     </div>
-                </div>
+                </article>
                 
-                <div class="blogg">
+                <article class="blogg">
                     <div class="bloggContent">
                         <a id="lab1-6" class="print_nolink"></a><h2>Uppgift 1.6 - Video</h2>
         
@@ -83,9 +115,9 @@
                         <p class="floatleft">Skrivet av Joakim, 2014-09-10</p>
                         <p class="floatright">Updaterad senast 2014-09-10 | <a href="mailto:jh222qr@student.lnu.se">Kontakta sidansvarig</a></p> 
                     </div>
-                </div>
+                </article>
         
-                <div class="blogg">
+                <article class="blogg">
                     <div class="bloggContent">
                         <a id="lab1-5" class="print_nolink"></a><h2>Uppgift 1.5 - Bilder</h2>
                         
@@ -98,11 +130,11 @@
                         <p class="floatleft">Skrivet av Joakim, 2014-09-10</p>
                         <p class="floatright">Updaterad senast 2014-09-10 | <a href="mailto:jh222qr@student.lnu.se">Kontakta sidansvarig</a></p> 
                     </div>
-                </div>
+                </article>
                 
-                <div class="blogg">
+                <article class="blogg">
                     <div class="bloggContent">
-                        <h2>Uppgift 1.4</h2>
+                        <a id="lab1-4" class="print_nolink"></a><h2>Uppgift 1.4</h2>
                         <p>Sökvägar inom HTML.</p>
                         <dl class="labList">
                             <dt>Fråga 1.4.1</dt>
@@ -124,11 +156,11 @@
                         <p class="floatleft">Skrivet av Joakim, 2014-09-10</p>
                         <p class="floatright">Updaterad senast 2014-09-10 | <a href="mailto:jh222qr@student.lnu.se">Kontakta sidansvarig</a></p> 
                     </div>
-                </div>
+                </article>
     
-                <div class="blogg">
+                <article class="blogg">
                     <div class="bloggContent">
-                        <h2>Laboration 1</h2>
+                        <a id="lab1-1" class="print_nolink"></a><h2>Laboration 1</h2>
                         
                         <p>På denna blogg kommer jag att skriva några rader om de laborationer jag gör och också publicera material som jag producerar.</p>
                     </div>
@@ -136,7 +168,7 @@
                         <p class="floatleft">Skrivet av Joakim, 2014-09-10</p>
                         <p class="floatright">Updaterad senast 2014-09-10 | <a href="mailto:jh222qr@student.lnu.se">Kontakta sidansvarig</a></p> 
                     </div>
-                </div>
+                </article>
                 
             </div>
             

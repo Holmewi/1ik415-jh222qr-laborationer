@@ -32,7 +32,7 @@
     nav {
         margin: 0px;
         padding: 0px;
-        /*min-height: 237px;*/
+        min-height: 237px;
         width:100%;
         float:none;
         background-color: #FFF;
@@ -127,21 +127,41 @@
                 background-position: 200px -324px;
             }
     
+/* ASIDE */
+
+    #sidefield {
+            display: none;
+        }
+        
 /* CONTENT */
 
     #content {
         width: 100%;
-        padding-bottom: 20px;
-        margin: 0px 0px 30px 0px;
-        /* total width 730 */
+        float: left;
+        padding: 0px;
+        margin: 0px 0px 0px 0px;
         background-color: #FFF;
+
     }
     
         #contentTop {
+            width: 90%;
+            float: none;
             height: auto;
-            padding-top: 15px;
-            margin: 0px 40px 0px 40px;
+            margin: 0px 0px 0px 0px;
+            margin: 0% 5% 0 5%;
         }
+        
+        .blogg {
+            float: none;
+            padding: 0px 0px 40px 0px;
+        	margin: 0px 0px 0px 0px;
+            width: 90%;
+        	clear: both;
+        	margin: 5%;
+        	
+        }
+    
         
         .blogg table {
             width: 100%;
@@ -180,6 +200,7 @@
 /* IMAGES AND VIDEOS */
     
     .bloggVideo {
+        max-width: 100px;
         width: 100%;
         padding: 7px 0px 0px 0px;
     }
@@ -193,23 +214,30 @@
         padding: 0px 20px 10px 0px;
         float: left;
         max-width: 140px;
+        width: 100%;
+    }
+    
+    .bloggbild {
+        max-width: 100px;
+        width: 100%;
+        padding: 0px 0px 10px 0px;
     }
     
     .bloggBild_right {
+        max-width: 100px;
         width: 100%;
-        max-width: 400px;
-        padding: 0px 0px 20px 0px;
+        padding: 0px 0px 10px 0px;
     }
     
     .bloggBild_left {
+        max-width: 100px;
         width: 100%;
-        max-width: 400px;
-        padding: 0px 0px 20px 0px;
+        padding: 0px 0px 10px 0px;
     }
     
     .bloggbild {
         width: 100%;
-        max-width: 400px;
+        padding: 0px 0px 10px 0px;
     }
     
 /* GENERAL CLASSES */
@@ -218,6 +246,18 @@
     	-webkit-border-radius: 0px;
     	-moz-border-radius: 0px;
     	border-radius: 0px;
+    }
+    
+    .bloggContent {
+        clear: both;
+        height: auto;
+    	padding-bottom: 20px;
+    }
+    
+    .bloggInfo p {
+    	font-size: 12px;
+    	line-height: 0;
+        display: block;
     }
     
     .floatleft {
@@ -236,7 +276,10 @@ Hittade lite nyttig hjälp på mozilla developer för att ändra utseendet på c
 Källa: https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/Advanced_styling_for_HTML_forms
 */
     
-
+    .form {
+        height: auto;
+    	margin: 30px;
+    }
     
     form    {
         line-height: 24px;
@@ -357,7 +400,7 @@ Källa: https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/Advanced_s
             input[type=submit] {
                border: 1px solid #1F5873;
                padding: 14px;
-               font-size: 18px;
+               font-size: 14px;
                line-height: 17px;
                width: 50%;
                color: #FAFAFA;
