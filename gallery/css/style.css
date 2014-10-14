@@ -29,13 +29,19 @@ a {
     padding: 7px;
     margin: 15px;
     background-color: #FFF;
+    /* Källa MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/transition */
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+    -webkit-transform:rotate(5deg);
+    -moz-transform:rotate(5deg);
+    tranform.rotate(5deg);
     -webkit-box-shadow: 2px 2px 2px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow:    2px 2px 2px 0px rgba(50, 50, 50, 0.75);
     box-shadow:         2px 2px 2px 0px rgba(50, 50, 50, 0.75);
 }
 
-/* Hittade lite information på MDN
-Källa: https://developer.mozilla.org/en-US/docs/Web/CSS/content*/
+/* Källa MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/content */
 a:after {
     content:attr(title);
 }
