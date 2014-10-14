@@ -33,9 +33,9 @@ a {
     -webkit-transition: 1s;
     -moz-transition: 1s;
     transition: 1s;
-    -webkit-transform:rotate(5deg);
-    -moz-transform:rotate(5deg);
-    tranform.rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    tranform: rotate(5deg);
     -webkit-box-shadow: 2px 2px 2px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow:    2px 2px 2px 0px rgba(50, 50, 50, 0.75);
     box-shadow:         2px 2px 2px 0px rgba(50, 50, 50, 0.75);
@@ -53,4 +53,12 @@ a:hover, :focus {
 	-webkit-box-shadow: 14px 14px 25px 0px rgba(50, 50, 50, 0.4);
     -moz-box-shadow:    14px 14px 25px 0px rgba(50, 50, 50, 0.4);
     box-shadow:         14px 14px 25px 0px rgba(50, 50, 50, 0.4);
+}
+
+/* Källa MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child */
+
+a:nth-child(2n) {
+	-webkit-transform: rotate(-5deg);
+	-moz-transform: rotate(-5deg);
+	transform: rotate(-5deg);
 }
