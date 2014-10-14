@@ -4,6 +4,9 @@ html {
 	font-family: 'Shadows Into Light', cursive;
 }
 
+#images {
+	margin: 40px;
+}
 
 img {
 	max-width: 200px;
