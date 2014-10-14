@@ -44,7 +44,7 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section, container {
+footer, header, hgroup, main, menu, nav, section, container {
 	display: block;
 }
 
@@ -113,7 +113,7 @@ body {
 /* HEADMENU */
     
     nav {
-        width: 250px;
+        width: 220px;
         min-height: 300px;
         padding-top: 30px;
         padding-bottom: 20px;
@@ -122,16 +122,16 @@ body {
         background-color: #FFF;
     }
     
-        #headMenu ul {
+        #headmenu ul {
             margin: 0;
             padding: 0;
             list-style-type: none;
             font-size: 18px;
         }
         
-        #headMenu ul li{float:left; width:100%;}
+        #headmenu ul li{float:left; width:100%;}
         
-        #headMenu ul li a {
+        #headmenu ul li a {
             display: block;
             background: #d9d9d9;
             /*width: 220px;*/
@@ -143,75 +143,75 @@ body {
     
         }
         
-            #headMenu ul li a:hover {
+            #headmenu ul li a:hover {
                 border-left-color: #56869D;
                 color: #56869D;
                 background: #c4c4c4;
             }
             
-            #headMenu ul li a:active {
+            #headmenu ul li a:active {
                 border-left-color: #1F5873;
                 color: #1F5873;
                 background: #c4c4c4;
             }
             
-            #headMenu .active {
+            #headmenu .active {
                 border-left-color: #1F5873;
                 color: #333333;
                 background: #c4c4c4;
             } 
             
-            #headMenu a {
+            #headmenu a {
                 background-image:url(pics/sprite.png);
             } 
             
-            #headMenu #homepage:hover {
+            #headmenu #homepage:hover {
                 background-image:url(pics/sprite.png);
                 background-repeat: no-repeat;
-                background-position: 200px 12px;
+                background-position: 175px 12px;
             } 
         
         
-            #headMenu #homepage {
+            #headmenu #homepage {
                 background-image:url(pics/sprite.png);
                 background-repeat: no-repeat;
-                background-position: 200px -36px;
+                background-position: 175px -36px;
             } 
         
-            #headMenu #aboutpage:hover {
+            #headmenu #aboutpage:hover {
                 background-image:url(pics/sprite.png);
                 background-repeat: no-repeat;
-                background-position: 200px -180px;
+                background-position: 175px -180px;
             }
             
-            #headMenu #aboutpage {
+            #headmenu #aboutpage {
                 background-image:url(pics/sprite.png);
                 background-repeat: no-repeat;
-                background-position: 200px -228px;
+                background-position: 175px -228px;
             }
         
-            #headMenu #labpage:hover {
+            #headmenu #labpage:hover {
                 background-image:url(pics/sprite.png);
                 background-repeat: no-repeat;
-                background-position: 200px -84px;
+                background-position: 175px -84px;
             }
             
-            #headMenu #labpage {
+            #headmenu #labpage {
                 background-image:url(pics/sprite.png);
                 background-repeat: no-repeat;
-                background-position: 200px -132px;
+                background-position: 175px -132px;
             }
             
-            #headMenu #contactpage:hover {
+            #headmenu #contactpage:hover {
                 background-image:url(pics/sprite.png);
                 background-repeat: no-repeat;
-                background-position: 200px -276px;
+                background-position: 175px -276px;
             }
         
-            #headMenu #contactpage {
+            #headmenu #contactpage {
                 background-image:url(pics/sprite.png);
                 background-repeat: no-repeat;
-                background-position: 200px -324px;
+                background-position: 175px -324px;
             }
     
 /* ASIDE */
@@ -219,10 +219,11 @@ body {
     #sidefield {
         font-size: 14px;
         float: right;
-        height: 1000px;
+        height: auto;
         max-width: 170px;
         width: 100%;
-        margin: 0px 0px 0px 0px;
+        padding: 30px;
+        margin: 30px 0px 30px 0px;
         /* total width 730 */
         background-color: #FFF;
     }
@@ -231,15 +232,19 @@ body {
         padding-top: 5px;
     }
     
-/* CONTENT */
+/* MAIN CONTENT */
 
-    #content {
+    main {
         width: 670px;
-        float: right;
+        float: left;
         padding: 30px;
-        margin: 30px 0px 30px 0px;
+        margin: 30px 0px 30px 20px;
         /* total width 730 */
         background-color: #FFF;
+    }
+    
+    #contenthome {
+        width: 450px;
     }
     
         #contentTop {

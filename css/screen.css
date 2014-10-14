@@ -45,7 +45,7 @@
             font-size: 18px;
         }
         
-        #headMenu ul li a {
+        #headmenu ul li a {
             display: block;
             background: #d9d9d9;
             /*width: 450px;*/
@@ -57,72 +57,72 @@
     
         }
         
-            #headMenu ul li a:hover {
+            #headmenu ul li a:hover {
                 border-left-color: #56869D;
                 color: #56869D;
                 background: #c4c4c4;
             }
             
-            #headMenu ul li a:active {
+            #headmenu ul li a:active {
                 border-left-color: #1F5873;
                 color: #1F5873;
                 background: #c4c4c4;
             }
             
-            #headMenu .active {
+            #headmenu .active {
                 border-left-color: #1F5873;
                 color: #333333;
                 background: #c4c4c4;
             } 
             
-            #headMenu a {
-                background-image:url(pics/sprite.png);
+            #headmenu a {
+                background-image:none;
             } 
             
-            #headMenu #homepage:hover {
-                background-image:url(pics/sprite.png);
+            #headmenu #homepage:hover {
+                background-image:none;
                 background-repeat: no-repeat;
                 background-position: 200px 12px;
             }
         
-            #headMenu #homepage {
-                background-image:url(pics/sprite.png);
+            #headmenu #homepage {
+                background-image:none;
                 background-repeat: no-repeat;
                 background-position: 200px -36px;
             } 
         
-            #headMenu #aboutpage:hover {
-                background-image:url(pics/sprite.png);
+            #headmenu #aboutpage:hover {
+                background-image:none;
                 background-repeat: no-repeat;
                 background-position: 200px -180px;
             }
             
-            #headMenu #aboutpage {
-                background-image:url(pics/sprite.png);
+            #headmenu #aboutpage {
+                background-image:none;
                 background-repeat: no-repeat;
                 background-position: 200px -228px;
             }
         
-            #headMenu #labpage:hover {
-                background-image:url(pics/sprite.png);
+            #headmenu #labpage:hover {
+                background-image:none;
                 background-repeat: no-repeat;
                 background-position: 200px -84px;
             }
             
-            #headMenu #labpage {
-                background-image:url(pics/sprite.png);
+            #headmenu #labpage {
+                background-image:none;
                 background-repeat: no-repeat;
                 background-position: 200px -132px;
             }
             
-            #headMenu #contactpage:hover {
-                background-image:url(pics/sprite.png);
+            #headmenu #contactpage:hover {
+                background-image:none;
                 background-repeat: no-repeat;
                 background-position: 200px -276px;
             }
         
-            #headMenu #contactpage {
-                background-image:url(pics/sprite.png);
+            #headmenu #contactpage {
+                background-image:none;
                 background-repeat: no-repeat;
                 background-position: 200px -324px;
             }
@@ -135,13 +135,17 @@
         
 /* CONTENT */
 
-    #content {
+    main {
         width: 100%;
         float: left;
         padding: 0px;
         margin: 0px 0px 0px 0px;
         background-color: #FFF;
-
+    }
+    
+    #contenthome {
+        width: 100%;
+        background-color: #FFF;
     }
     
         #contentTop {
