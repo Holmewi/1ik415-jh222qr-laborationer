@@ -14,13 +14,13 @@
     </head>
     <body id="home">
         <div id="wrapper"> <!-- fick felmeddelande när jag använde taggen container -->
-            <header>
-                <div id="headerTop">
+            <header id="top">
+                <section id="headerTop">
                         
-                </div>
-                <div id="headerBottom">
+                </section>
+                <section id="headerBottom">
                     <img src="pics/logo.png" alt="min logotyp" class="logotyp">
-                </div>
+                </section>
             </header>
             
             <nav id="headmenu" class="borderRadius">
@@ -33,51 +33,51 @@
             </nav>
             
             <aside id="sidefield" class="borderRadius">
-                    <h3>Senaste inlägg</h3>
-                    <a href="#lab3-3">Uppgift 3.3 - Copycat</a>
-                    <p>Skrivet: 2014-10-01</p>
-                    
-                    <a href="#lab2-7">Uppgift 2.7 - Ny bloggpost</a>
-                    <p>Skrivet: 2014-09-24</p>
-                    
-                    <a href="#lab1-6">Uppgift 1.6 - Video</a>
-                    <p>Skrivet: 2014-09-10</p>
-                    
-                    <a href="#lab1-5">Uppgift 1.5 - Bilder</a>
-                    <p>Skrivet: 2014-09-10</p>
-                    
-                    <a href="#lab1-4">Uppgift 1.4</a>
-                    <p>Skrivet: 2014-09-10</p>
-                    
-                    <a href="#lab1-1">Laboration 1</a>
-                    <p>Skrivet: 2014-09-10</p>
+                <header class="asideheader"><h3>Senaste inlägg</h3></header>
+                    <section>
+                        <a href="#lab3-3">Uppgift 3.3 - Copycat</a>
+                        <p>Skrivet: 2014-10-01</p>
+                        
+                        <a href="#lab2-7">Uppgift 2.7 - Ny bloggpost</a>
+                        <p>Skrivet: 2014-09-24</p>
+                        
+                        <a href="#lab1-6">Uppgift 1.6 - Video</a>
+                        <p>Skrivet: 2014-09-10</p>
+                        
+                        <a href="#lab1-5">Uppgift 1.5 - Bilder</a>
+                        <p>Skrivet: 2014-09-10</p>
+                        
+                        <a href="#lab1-4">Uppgift 1.4</a>
+                        <p>Skrivet: 2014-09-10</p>
+                        
+                        <a href="#lab1-1">Laboration 1</a>
+                        <p>Skrivet: 2014-09-10</p>
+                    </section>
                 </aside>
                 
             <main id="contenthome" class="borderRadius">
             
                 
                 
-                <div id="contentTop">
+                <header id="mainheader">
                     <h1>Joakim Holmevi, jh222qr</h1>
                     <h4>Blogg om utveckling av digitala tjänster</h4>       
-                </div>
+                </header>
                 
                 <article class="blogg">
-                    <div class="bloggContent">
-                        <a id="lab3-3" class="print_nolink"></a><h2>Uppgift 3.3 - Copycat</h2>
-                        
+                    <header><a id="lab3-3" class="print_nolink"></a><h2>Uppgift 3.3 - Copycat</h2></header>
+                    <section class="bloggContent">
                         <a href="https://preview.c9.io/holmewi/uppgift-3-3/index.html" target="_blank"><img src="pics/IE7_hela.png" alt="en bild på en hemsida" class="floatleft bloggBild_left"></a>
                         <p class="ingress">Uppgift 3.3 Copycat är klar för visning. Klicka på bilden till vänster för att komma till sidan.</p>
                         <p>Det var en bra uppgift.</p>
-                    </div>
-                    <div class="bloggInfo">
+                    </section>
+                    <footer class="bloggInfo">
                         <p class="floatleft">Skrivet av Joakim, 2014-09-24</p>
-                        <p class="floatright">Updaterad senast 2014-09-24 | <a href="mailto:jh222qr@student.lnu.se">Kontakta sidansvarig</a></p> 
-                    </div>
+                        <p class="floatright">Updaterad 2014-09-24 | <a href="mailto:jh222qr@student.lnu.se">Kontakta sidansvarig</a></p> 
+                    </footer>
                     
-                    <section>
-                        <a class="commentlink" href="?comments=1">Visa kommentarer</a>
-                        <h2>Kommentarer</h2>
+                    <section class="comments">
+                        <header><h2>Kommentarer</h2></header>
                         <article class="comment">
                             <h4>Skrivet av: John Doe</h4>
                             <p>2014-10-01 20:30</p>
@@ -87,54 +87,51 @@
                 </article>
                 
                 <article class="blogg">
-                    <div class="bloggContent">
-                        <a id="lab2-7" class="print_nolink"></a><h2>Uppgift 2.7 - Ny bloggpost</h2>
-                        
+                    <header><a id="lab2-7" class="print_nolink"></a><h2>Uppgift 2.7 - Ny bloggpost</h2></header>
+                    <section class="bloggContent">
                         <img src="pics/dexter.png" alt="en bild på min hund" class="floatright bloggBild_right">
                         <p class="ingress">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et aliquam nunc. Fusce condimentum dui scelerisque finibus dapibus. Nam finibus at sem id varius. Duis in volutpat sem. Duis elementum ipsum vitae odio posuere, non dignissim tortor vehicula. Vestibulum erat nisi, pretium quis euismod ut, interdum sit amet odio. Curabitur dui lacus, semper nec quam id, vulputate ultrices velit. Integer fermentum tellus orci, a interdum lectus efficitur ut. Aenean in tortor sit amet elit varius iaculis. Sed sodales augue blandit augue vulputate consectetur. Aliquam id dignissim lacus, blandit viverra augue. Duis volutpat massa eu lacus porta congue.</p>
                         <p>Vestibulum dui lorem, vehicula et dapibus volutpat, efficitur sed metus. Proin neque libero, dapibus at pretium laoreet, molestie eget est. Quisque tincidunt eros non urna egestas, nec imperdiet dui semper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam vel enim ac massa sodales laoreet at vitae purus. Fusce leo nulla, facilisis sit amet pulvinar ac, maximus at sem. Aliquam ornare, diam quis volutpat semper, sapien lorem lacinia augue, tincidunt tristique mauris enim in dolor. Nullam consequat venenatis eros at euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin sem ante, vitae maximus tellus fermentum sit amet.</p>
                         <p>Quisque euismod blandit elementum. Ut ac accumsan ligula. Phasellus nec porttitor lectus. Vivamus non augue in libero sagittis consequat vitae id lacus. Suspendisse a semper nulla. Curabitur pretium eget mauris sagittis elementum. Proin sit amet dolor sit amet nisi egestas fermentum aliquet nec orci. Proin posuere neque rutrum euismod gravida. Proin scelerisque a orci eget aliquam. Mauris scelerisque magna vel justo porta, vel eleifend lectus sollicitudin. Aliquam et magna tellus. Etiam aliquam erat ut porta feugiat. Integer condimentum auctor tempor.</p>
-                    </div>
-                    <div class="bloggInfo">
+                    </section>
+                    <footer class="bloggInfo">
                         <p class="floatleft">Skrivet av Joakim, 2014-09-24</p>
-                        <p class="floatright">Updaterad senast 2014-09-24 | <a href="mailto:jh222qr@student.lnu.se">Kontakta sidansvarig</a></p> 
-                    </div>
+                        <p class="floatright">Updaterad 2014-09-24 | <a href="mailto:jh222qr@student.lnu.se">Kontakta sidansvarig</a></p> 
+                    </footer>
                 </article>
                 
                 <article class="blogg">
-                    <div class="bloggContent">
-                        <a id="lab1-6" class="print_nolink"></a><h2>Uppgift 1.6 - Video</h2>
-        
+                    <header><a id="lab1-6" class="print_nolink"></a><h2>Uppgift 1.6 - Video</h2></header>
+                    <section class="bloggContent">
                         <p class="ingress">Ett stort tack till <a href="http://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a> för lånet av trailern!</p>
                         <video controls class="bloggVideo">
                         <source src="videos/trailer_400p.ogg" type="video/ogg">
                         Din webbläsare stödjer inte HTML5-video.
                     </video>
-                    </div>
-                    <div class="bloggInfo">
+                    </section>
+                    <footer class="bloggInfo">
                         <p class="floatleft">Skrivet av Joakim, 2014-09-10</p>
-                        <p class="floatright">Updaterad senast 2014-09-10 | <a href="mailto:jh222qr@student.lnu.se">Kontakta sidansvarig</a></p> 
-                    </div>
+                        <p class="floatright">Updaterad 2014-09-10 | <a href="mailto:jh222qr@student.lnu.se">Kontakta sidansvarig</a></p> 
+                    </footer>
                 </article>
         
                 <article class="blogg">
-                    <div class="bloggContent">
-                        <a id="lab1-5" class="print_nolink"></a><h2>Uppgift 1.5 - Bilder</h2>
-                        
+                    <header><a id="lab1-5" class="print_nolink"></a><h2>Uppgift 1.5 - Bilder</h2></header>
+                    <section class="bloggContent">
                         <p class="ingress">En vektorbild i svg-format</p>
                         <p>Mitt senaste grafiska projekt gjorde jag i somras för Kalmar musteri. Här är deras logotyp.</p>
                         
                         <img src="pics/ikon.svg" alt="kalmar musteri logo" class="bloggbild">
-                    </div>
-                    <div class="bloggInfo">
+                    </section>
+                    <footer class="bloggInfo">
                         <p class="floatleft">Skrivet av Joakim, 2014-09-10</p>
-                        <p class="floatright">Updaterad senast 2014-09-10 | <a href="mailto:jh222qr@student.lnu.se">Kontakta sidansvarig</a></p> 
-                    </div>
+                        <p class="floatright">Updaterad 2014-09-10 | <a href="mailto:jh222qr@student.lnu.se">Kontakta sidansvarig</a></p> 
+                    </footer>
                 </article>
                 
                 <article class="blogg">
-                    <div class="bloggContent">
-                        <a id="lab1-4" class="print_nolink"></a><h2>Uppgift 1.4</h2>
+                    <header><a id="lab1-4" class="print_nolink"></a><h2>Uppgift 1.4</h2></header>
+                    <section class="bloggContent">
                         <p>Sökvägar inom HTML.</p>
                         <dl class="labList">
                             <dt>Fråga 1.4.1</dt>
@@ -150,29 +147,28 @@
                             <dt>Fråga 1.4.6</dt>
                             <dd>html/pages/top.html</dd>
                         </dl>
-                    </div>
+                    </section>
                 
-                    <div class="bloggInfo">
+                    <footer class="bloggInfo">
                         <p class="floatleft">Skrivet av Joakim, 2014-09-10</p>
-                        <p class="floatright">Updaterad senast 2014-09-10 | <a href="mailto:jh222qr@student.lnu.se">Kontakta sidansvarig</a></p> 
-                    </div>
+                        <p class="floatright">Updaterad 2014-09-10 | <a href="mailto:jh222qr@student.lnu.se">Kontakta sidansvarig</a></p> 
+                    </footer>
                 </article>
     
                 <article class="blogg">
-                    <div class="bloggContent">
-                        <a id="lab1-1" class="print_nolink"></a><h2>Laboration 1</h2>
-                        
+                    <header><a id="lab1-1" class="print_nolink"></a><h2>Laboration 1</h2></header>
+                    <section class="bloggContent">
                         <p>På denna blogg kommer jag att skriva några rader om de laborationer jag gör och också publicera material som jag producerar.</p>
-                    </div>
-                    <div class="bloggInfo">
+                    </section>
+                    <footer class="bloggInfo">
                         <p class="floatleft">Skrivet av Joakim, 2014-09-10</p>
-                        <p class="floatright">Updaterad senast 2014-09-10 | <a href="mailto:jh222qr@student.lnu.se">Kontakta sidansvarig</a></p> 
-                    </div>
+                        <p class="floatright">Updaterad 2014-09-10 | <a href="mailto:jh222qr@student.lnu.se">Kontakta sidansvarig</a></p> 
+                    </footer>
                 </article>
                 
             </main>
             
-            <footer>
+            <footer id="bottom">
                 <div id="footerNav">
                     <ul>
                         <li><a href="index.html">Hem</a></li>
