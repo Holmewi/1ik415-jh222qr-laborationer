@@ -255,7 +255,7 @@ body {
             width: 100%;
             float: left;
             height: auto;
-            margin: 0px 0px 0px 0px;
+            margin: 0px 0px 20px 0px;
             border-style: double;
             border-color: #D9D9D9;
             border-width: 0px 0px 4px 0px;
@@ -281,6 +281,10 @@ body {
                     border-width: 0px 0px 1px 0px;
                     clear: both;
                 }
+                
+                    #hcard-Joakim-Torbjorn-Holmevi {
+                    
+                    }
                 
                     .blogg p {
                 	padding-bottom: 20px;
@@ -326,7 +330,7 @@ body {
     
 /* FOOTER */
 
-    footer #bottom {
+    #bottom {
         max-width: 1000px;
         height: 173px;
         /* total width 1000 */

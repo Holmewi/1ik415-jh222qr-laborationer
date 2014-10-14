@@ -38,14 +38,33 @@
                     <h4>Här listas min kontaktinformation</h4>
                 </header>
                 
-                <p id="observe">Observera! Detta är bara ett påhittat kontaktformulär!</p>
+                <section id="hcard-Joakim-Torbjorn-Holmevi" class="vcard">
+                    <span class="fn n">
+                        <span class="given-name">Joakim</span>
+                        <span class="additional-name">Torbjörn</span>
+                        <span class="family-name">Holmevi</span>
+                    </span>
+                    <a class="email" href="mailto:jh222qr@student.lnu.se">jh222qr@student.lnu.se</a>
+                    <section class="adr">
+                        <div class="street-address">Slottsvägen 1A</div>
+                        <span class="locality">Kalmar</span>, 
+                        <span class="postal-code">39233</span>
+                        <span class="country-name">Sweden</span>
+                    </section>
+                    <section class="tel">0704947240</section>
+                    <p style="font-size:smaller;">This <a href="http://microformats.org/wiki/hcard">hCard</a> created with the <a href="http://microformats.org/code/hcard/creator">hCard creator</a>.</p>
+                
+                    <p id="observe">Observera! Detta är bara ett påhittat kontaktformulär!</p>
+                </section>
+                
+                
                 
                 <div class="form">
                     <a id="kontaktform" class="print_nolink"></a>
                     <form id="input" action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="POST" name="ContactForm">
                         <fieldset id="set_form">
                             <legend>
-                                <label class="formHeader" name="FormHeader">Ställ en fråga</label>
+                                <label class="formHeader">Ställ en fråga</label>
                             </legend>
                             <p><label for="form_list">Ärendetyp:</label></p>
                             <select id="form_list" name="FormList" >
@@ -71,7 +90,7 @@
                         
                         <fieldset id="contact_info">
                             <legend>
-                                <label class="formHeader" name="FormInfo">Information om dig</label>
+                                <label class="formHeader">Information om dig</label>
                             </legend>
                             <p>
                                 <input type="checkbox" id="form_email" name="FormEmail" value="email">
@@ -86,7 +105,7 @@
                     </form>
                 </div>
              </main>
-             <footer>
+             <footer id="bottom">
                 <div id="footerNav">
                     <ul>
                         <li><a href="../index.html">Hem</a></li>
