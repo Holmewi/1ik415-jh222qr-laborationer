@@ -46,6 +46,15 @@ a:after {
     content:attr(title);
 }
 
+/* Källa MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child 
+:nth-child var tydligen tvungen att ligga innan för att rotationen vid hover skulle fungera */
+
+a:nth-child(2n) {
+	-webkit-transform: rotate(-5deg);
+	-moz-transform: rotate(-5deg);
+	transform: rotate(-5deg);
+}
+
 a:hover, :focus {
 	-webkit-transform: scale(1.2);
 	-moz-transform: scale(1.2);
@@ -55,10 +64,3 @@ a:hover, :focus {
     box-shadow:         14px 14px 25px 0px rgba(50, 50, 50, 0.4);
 }
 
-/* Källa MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child */
-
-a:nth-child(2n) {
-	-webkit-transform: rotate(-5deg);
-	-moz-transform: rotate(-5deg);
-	transform: rotate(-5deg);
-}
