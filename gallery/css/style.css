@@ -22,7 +22,10 @@ img {
 }
 
 a {
+    text-align: center;
+    text-decoration: none;
     float: left;
+    max-width: 200px;
     padding: 7px;
     margin: 15px;
     background-color: #FFF;
@@ -31,7 +34,13 @@ a {
     box-shadow:         2px 2px 2px 0px rgba(50, 50, 50, 0.75);
 }
 
-a:hover {
+/* Hittade lite information på MDN
+Källa: https://developer.mozilla.org/en-US/docs/Web/CSS/content*/
+a:after {
+    content:attr(title);
+}
+
+a:hover, :focus {
 	-webkit-transform: scale(1.2);
 	-moz-transform: scale(1.2);
 	transform: scale(1.2);
